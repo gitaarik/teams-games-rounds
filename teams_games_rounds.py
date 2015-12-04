@@ -33,7 +33,7 @@ for round_no in range(rounds_no):
         def add_team_data(team_no, round_no, game_no, opponent_no):
             teams_data[team_no]['rounds'].append(round_no)
             teams_data[team_no]['games'].append(game_no)
-            teams_data[team_no]['opponents'].append(team2)
+            teams_data[team_no]['opponents'].append(opponent_no)
 
         team1 = get_team()
         team2 = get_team(exclude_teams=[team1] + teams_data[team1]['opponents'])
